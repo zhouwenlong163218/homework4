@@ -1,138 +1,183 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
+
+		<meta charset="UTF-8">
 		<style type="text/css">
-			.box1{
-				width: 60px;
-				height:73px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -364px -171px;
+			/* 每次必做的事 */
+			* {
+				padding: 0;
+				margin: 0;
 			}
-			.box2{
-				width: 56px;
-				height:74px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -291px -10px;
+
+
+
+			.grandfather {
+
+				width: 980px;
+				height: 550px;
+				margin: 0 auto;
+				background: white;
 			}
-			.box3{
-				width: 55px;
-				height:71px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -279px -92px;
+/* father1里的 */
+
+/* 粉色 */
+			.pink {
+				width: 250px;
+				height: 100px;
+				background: pink;
+				float: left;
+
 			}
-			.box4{
-				width: 36px;
-				height:64px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -63px -318px;
+
+			.fatehr1_right{
+				width: 650px;
+				height: 100px;
+				background: white;
+				float: right;
 			}
-			.box5{
-				width: 53px;
-				height:77px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -238px -316px;
+/* 蓝色 */
+			.sky_blue {
+				width: 150px;
+				height: 50px;
+				background: skyblue;
+				float: right;
+
 			}
-			.box6{
-				width: 36px;
-				height:64px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -63px -318px;
+
+			
+/* /* 紫色 */
+			.purple {
+				width: 650px;
+				height: 50px;
+				background: purple;
+
 			}
-			.box7{
-				width: 60px;
-				height:70px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -438px -323px;
+			
+			
+			
+			
+			/* father2里的*/
+			.father2 {
+				margin-top: 10px;
+				box-sizing: border-box;
+				margin-bottom: 10px;
 			}
-			.box8{
-				width: 53px;
-				height:77px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -238px -316px;
+/* 黄色 */
+			.fatehr2_left {
+				width: 320px;
+				height: 400px;
+				background: yellow;
+				float: left;
+
 			}
-			.box9{
-				width: 60px;
-				height:70px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -438px -323px;
+
+			.fatehr2_right {
+				width: 650px;
+				height: 400px;
+				background: white;
+				float: right;
 			}
-			.box10{
-				width: 48px;
-				height:67px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -97px -326px;
+
+			.father2_right_up {
+				width: 650px;
+				height: 350px;
+				background: white;
+
 			}
-			.box11{
-				width: 58px;
-				height:69px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -192px -324px;
+/* 棕色 */
+			.father2_right_down {
+				width: 650px;
+				height: 40px;
+				background: saddlebrown;
+				margin-top: 10px;
+
 			}
-			.box12{
-				width: 51px;
-				height:72px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -291px -321px;
+
+			.father2_right_up_left {
+				float: left;
 			}
-			.box13{
-				width: 36px;
-				height:64px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -63px -318px;
+/* 草绿色 */
+			.father2_right_up_right {
+				width: 240px;
+				height: 350px;
+				background: yellowgreen;
+
+				float: right;
+
+
 			}
-			.box14{
-				width: 36px;
-				height:64px;
-				background: red;
-				background-image: url(img/精灵图练习.PNG);
-				background-repeat: no-repeat;
-				background-position: -63px -318px;
+/* 深粉色 */
+			.father2_right_up_left_up {
+				width: 400px;
+				height: 200px;
+				background: deeppink;
 			}
+/* 深蓝色 */
+			.father2_right_up_left_down {
+				width: 400px;
+				height: 140px;
+				background: deepskyblue;
+				margin-top: 10px;
+			}
+             /* father3里的 */
+			 /* 橘色 */
+			.father_3 {
+				width: 980px;
+				height: 40px;
+				background: orangered;
+				margin-top: 10px;
+			}
+			
+			
+	/* 清除浮动 */		
+			.wall {
+							clear: both;7
+						}
+			
 		</style>
+		<title></title>
 	</head>
 	<body>
-		<div class="box1"></div>
-		<div class="box2"></div>
-		<div class="box3"></div>
-		<div class="box4"></div>
-		<div class="box5"></div>
-		<div class="box6"></div>
-		<div class="box7"></div>
-		<div class="box8"></div>
-		<div class="box9"></div>
-		<div class="box10"></div>
-		<div class="box11"></div>
-		<div class="box12"></div>
-		<div class="box13"></div>
-		<div class="box14"></div>
-		
+		<div class="grandfather">
+<!-- father1 -->
+			<div class="father1">
+				<!-- 左边 -->
+				<div class="father1_left">
+					<div class="pink">粉色</div>
+				</div>
+				<!--  右边-->
+					<div class="fatehr1_right">
+						<div class="sky_blue">天蓝</div>
+						<div class="wall"></div>
+						<div class="purple">紫色</div>
+					</div>
+				</div>
+			<div class="wall"></div>
+
+<!-- father2 -->
+			<div class="father2">
+				<!-- 左边 -->
+				<div class="fatehr2_left">黄色</div>
+				<!-- 右边 -->
+				<div class="fatehr2_right">
+					<!-- 右边的上 -->
+					<div class="father2_right_up">
+						<!-- 右边的上—— 左边-->
+						<div class="father2_right_up_left">
+							<div class="father2_right_up_left_up">深粉色</div>
+							<div class="father2_right_up_left_down">深蓝色</div>
+						</div>
+					<!-- 右边的上—— 左边-->
+						<div class="father2_right_up_right">草绿色</div>
+					</div>
+					<!-- 右边的下 -->
+					<div class="father2_right_down">棕色</div>
+				</div>
+			</div>
+<!-- father3 -->
+			<div class="wall"></div>
+			<div class="father_3">橘色</div>
+		</div>
 	</body>
-</html>
+<html>
